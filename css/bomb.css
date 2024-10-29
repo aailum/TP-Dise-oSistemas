@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(246, 203, 169);
+}
+
+#contenedor{
+    margin-top: 20px;
+}
+
+
+form{
+    width: 300px;
+    height: 380px;
+    background-color: rgb(247, 236, 222);
+    padding: 30px;
+    border-radius: 6px;
+   
+
+}
+
+
+.form-label{
+    color: rgb(0, 0, 0);
+}
