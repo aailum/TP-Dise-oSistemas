@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coordinadores</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../css/coord.css">
+    <link rel="stylesheet" href="../css/ingresoStyle.css">
 </head>
 <body>
+    <div id="contenedor" align="center">
+        <form > 
+          <h3>Ingreso</h3>
+          <div class="mb-3">
+            <label for="inputUsuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuario"> 
+          </div>
     
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div id="help" class="form-text">Si no todavía no tiene usuario comuniquese con su coordinador</div><br>
+          <button id="ingreso" type="submit" class="btn btn-primary btn-sm">Ingresar</button>
+          <button id="cancelar" type="button" class="btn btn-secondary btn-sm"><a href="../index.html">Cancelar</a></button>
+        </form>
+      </div>
 </body>
 </html>

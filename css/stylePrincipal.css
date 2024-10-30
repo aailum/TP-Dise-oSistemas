@@ -1,0 +1,21 @@
+p{
+    font-size: 40px;
+}
+
+.col{
+    background-color: rgb(73, 73, 237);
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.col:hover{
+    background-color: rgb(18, 56, 248);
+    
+}
