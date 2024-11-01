@@ -21,7 +21,7 @@ body{
     box-shadow: 0 8px 32px rgba(3, 38, 135, 0.37);
     backdrop-filter: blur(3.5px);
     border-radius: 10px;
-    border: 1px solid rgb(255, 255, 0.18);
+    border: 1px solid bisque;
 }
 
 .header{
@@ -81,3 +81,33 @@ button:hover{
     background-color: #3287cc;
 }
 
+/*Responsive*/
+
+
+@media (max-width: 380px){
+    button{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 236px){
+    .header h2{
+        font-size: 2rem;
+        margin-bottom: none;
+    }
+
+    input{
+    
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    input::placeholder{
+        font-size: 14px;
+    }
+
+    button{
+        margin-top: 40px;
+        height: 40px;
+    }
+}
