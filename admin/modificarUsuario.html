@@ -4,109 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Usuario</title>
-    <link rel="stylesheet" href="../css/crearUsuario.css">
+    <link rel="stylesheet" href="../css/stylePrincipal2.css">
 </head>
 <body>
-    <div class="contenedor">
-        <header>Modificar</header>
-
-        <form action="#">
-            <div class="form">
-                <div class="datos">
-                    <span class="title">Datos Personales</span>
-
-                    <div class="campos">
-                        <div class="input-campo">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre"  placeholder="Nombre" required>
+    <body>
+        <div class="sidebar">
+            <img src="../css/logo.jpeg" alt="Logo de RescueLens">
+            <a href="crearUsuario.html">Crear Usuario</a>
+            <a href="listaUsuarios.html">Lista Usuario</a>
+        </div>
+        <div class="content">
+            <header>
+                <h1>RescueLens</h1>
+            </header>
+    
+            <div class="contenedor1">
+                <h3>Modificar</h3>
+        
+                <form action="#">
+                    <div class="form">
+                        <div class="datos">
+                            <span class="title">Datos Personales</span>
+        
+                            <div class="campos">
+                                <div class="input-campo">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre"  placeholder="Nombre" required>
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="dni">DNI</label>
+                                    <input type="text" id="dni" name="dni" placeholder="DNI">
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="date">Fecha de Nacimiento</label>
+                                    <input type="date" id="date" name="date">
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="correo">Email</label>
+                                    <input type="email" id="correo" name="correo" placeholder="jon@doe.com">
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                                </div>
+        
+                            </div>
+        
+                            <div class="campos">
+                                <div class="input-campo">
+                                    <label for="genero">Genero</label>
+                                    <select name="genero" id="genero">
+                                    <option>Elija una opcion</option>
+                                    <option value="m">Masculino</option>
+                                    <option value="f">Femenino</option>
+                                    <option value="o">Otro</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="input-campo">
+                                    <label for="rol">Tipo de usuario</label>
+                                    <select name="rol" id="rol">
+                                    <option>Elija una opcion</option>
+                                    <option value="adm">Administrador</option>
+                                    <option value="coord">Coordinador</option>
+                                    <option value="bomb">Bombero</option>
+                                    </select>
+                                </div>
+        
+                                <div class="input-campo">
+                                    <label for="sangre">Tipo de sangre</label>
+                                    <select id="sangre" name="sangre">
+                                    <option>Elija una opcion</option>
+                                    <option value="ap">A+</option>
+                                    <option value="an">A-</option>
+                                    <option value="bp">B+</option>
+                                    <option value="bn">B-</option>
+                                    <option value="abp">AB+</option>
+                                    <option value="abn">AB-</option>
+                                    <option value="op">O+</option>
+                                    <option value="on">O-</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="input-campo">
+                                    <label for="peso">Peso</label>
+                                    <input type="number" id="peso" name="peso" placeholder="Peso en kg">
+                                </div>
+                                <div class="input-campo">
+                                    <label for="altura">Altura</label>
+                                    <input type="number" id="altura" name="altura" placeholder="Altura en cm">
+                                </div>
+                                <div class="input-campo">
+                                    <label for="historial">Historial de enfermedades</label>
+                                    <input type="file" id="historial">
+                                </div>
+        
+        
+                            </div>
+        
+                            <button class="crearBtn">
+                                <span class="btnCrear">Guardar Cambios</span>
+                            </button>
+        
                         </div>
-
-                        <div class="input-campo">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-                        </div>
-
-                        <div class="input-campo">
-                            <label for="dni">DNI</label>
-                            <input type="text" id="dni" name="dni" placeholder="DNI">
-                        </div>
-
-                        <div class="input-campo">
-                            <label for="date">Fecha de Nacimiento</label>
-		                    <input type="date" id="date" name="date">
-                        </div>
-
-                        <div class="input-campo">
-                            <label for="correo">Email</label>
-                            <input type="email" id="correo" name="correo" placeholder="jon@doe.com">
-                        </div>
-
-                        <div class="input-campo">
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="password" name="password" placeholder="Contraseña">
-                        </div>
-
                     </div>
-
-                    <div class="campos">
-                        <div class="input-campo">
-                            <label for="genero">Genero</label>
-                            <select name="genero" id="genero">
-                            <option>Elija una opcion</option>
-                            <option value="m">Masculino</option>
-                            <option value="f">Femenino</option>
-                            <option value="o">Otro</option>
-                            </select>
-                        </div>
-                        
-                        <div class="input-campo">
-                            <label for="rol">Tipo de usuario</label>
-                            <select name="rol" id="rol">
-                            <option>Elija una opcion</option>
-                            <option value="adm">Administrador</option>
-                            <option value="coord">Coordinador</option>
-                            <option value="bomb">Bombero</option>
-                            </select>
-                        </div>
-
-                        <div class="input-campo">
-                            <label for="sangre">Tipo de sangre</label>
-                            <select id="sangre" name="sangre">
-                            <option>Elija una opcion</option>
-                            <option value="ap">A+</option>
-                            <option value="an">A-</option>
-                            <option value="bp">B+</option>
-                            <option value="bn">B-</option>
-                            <option value="abp">AB+</option>
-                            <option value="abn">AB-</option>
-                            <option value="op">O+</option>
-                            <option value="on">O-</option>
-                            </select>
-                        </div>
-                        
-                        <div class="input-campo">
-                            <label for="peso">Peso</label>
-                            <input type="number" id="peso" name="peso" placeholder="Peso en kg">
-                        </div>
-                        <div class="input-campo">
-                            <label for="altura">Altura</label>
-                            <input type="number" id="altura" name="altura" placeholder="Altura en cm">
-                        </div>
-                        <div class="input-campo">
-                            <label for="historial">Historial de enfermedades</label>
-                            <input type="file" id="historial">
-                        </div>
-
-
-                    </div>
-
-                    <button class="crearBtn">
-                        <span class="btnCrear">Guardar Cambios</span>
-                    </button>
-
-                </div>
+                </form>
             </div>
-        </form>
-    </div>
+    
+        </div>
+    
 </body>
 </html>

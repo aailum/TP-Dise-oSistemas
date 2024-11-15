@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/listaUsuarios.css">
+    <link rel="stylesheet" href="../css/stylePrincipal2.css">
 </head>
 <body>
-    <div id="contenedor">
-        <h1>Usuarios</h1>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>DNI</th>
-                <th>Email</th>
-                <th>Rol</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Jorge</td>
-                <td>22152268</td>
-                <td>jorge@gmail.com</td>
-                <td>Administrador</td>
-                <td>
-                    <a class="editar" href="modificarUsuario.html">Editar</a>
-                    |
-                    <a class="eliminar" href="#">Eliminar</a>
-                </td>
-            </tr>
-        </table>
+    <div class="sidebar">
+        <img src="../css/logo.jpeg" alt="Logo de RescueLens">
+        <a href="crearUsuario.html">Crear Usuario</a>
+        <a href="listaUsuarios.html">Lista Usuario</a>
+    </div>
+    <div class="content">
+        <header>
+            <h1>RescueLens</h1>
+        </header>
+        <div id="contenedor2">
+            <h1 align="center">Usuarios</h1>
+            <table>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>Jorge</td>
+                    <td>jorge@gmail.com</td>
+                    <td>Administrador</td>
+                    <td>
+                        <a class="edit" href="modificarUsuario.html">Editar</a>
+                        |
+                        <a class="delete" href="#">Eliminar</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
