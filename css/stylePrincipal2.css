@@ -116,14 +116,29 @@ form .campos .input-campo{
     transition: all 0.3s linear;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 400;
-    
+    font-weight: 400; 
 
 }
 
-form button:hover{
+form .buttons{
+    display: flex;
+    align-items: center;
+
+}
+
+#cancelarBtn{
+    background-color: #ff0000;
+    margin-left: 14px;
+}
+
+#crearBtn:hover{
     background-color: #265df2;
 }
+#cancelarBtn:hover{
+    background-color: #b40202;
+}
+
+
 
 
 /*----------------Menu del costado y header ---------------*/
