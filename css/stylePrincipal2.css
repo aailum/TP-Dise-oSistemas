@@ -228,10 +228,12 @@ table td{
 
 .edit{
     color:#0ca4ce;
+    cursor: pointer;
 }
 
 .delete{
     color:#ff0000;
+    cursor: pointer;
 }
 
 /*-----------Modificar usuario---------------*/
