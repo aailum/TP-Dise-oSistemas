@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylePrincipal.css">
-   <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> link para conectar con bootstrap -->
+    <link rel="stylesheet" href="/css/stylePrincipal.css">
     <title>Pagina principal</title>
 </head>
 <body>
     <div class="main">
-       <div class="logo">  
-          <!--   <h2>Bienvenidos</h2>-->
-        </div> 
+        <div class="logo"></div>
         <div class="ingreso">
             <h1>Acceder como</h1>
-            <form>
-                <button><a href="bomberos/ingresoBombero.html">Bombero</a></button>
-                <button><a href="admin/ingresoAdmin.html">Coordinador</a></button>
-                <button><a href="coordinadores/ingresoCoordinador.html">Administrador</a></button>
+            <form id="loginForm" action="" method="get">
+                <button type="button" onclick="redirectToForm('/admin_home')"><a>Administrador</a></button>
+                <button type="button" onclick="redirectToForm('/coordinador_home')"><a>Coordinador</a></button>
+                <button type="button" onclick="redirectToForm('/bombero_home')"><a>Bombero</a></button>
             </form>
         </div>
     </div>
 
-
+    <script>
+        function redirectToForm(action) {
+            window.location.href = action;
+        }
+    </script>
 </body>
 </html>
