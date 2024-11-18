@@ -11,23 +11,22 @@ body{
 /*----------crear usuario-----------*/
 .contenedor1{
     position: relative;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
     border-radius: 6px;
     padding: 30px;
     margin: 50px 5px 5px 30px;
-    /*background-color: #fff;*/
-    /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);*/
-    border-color: #f8f8f8;
-    border-width: 2px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     justify-self: center;
+    backdrop-filter: blur(3.5px);
+    
 }
 
 h3{
     position: relative;
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: #000000;
 }
 h3::before{
     content: "";
@@ -44,7 +43,6 @@ h3::before{
     position: relative;
     margin-top: 16px;
     min-height: 490px;
-    /*background-color: #fff;*/
 }
 
 .contenedor1 form .datos{
@@ -58,7 +56,7 @@ h3::before{
     font-size: 16px;
     font-weight: 500;
     margin: 6px 0;
-    color: #333;
+    color: #000000;
 }
 
 .contenedor1 form .campos{
@@ -80,7 +78,7 @@ form .campos .input-campo{
 .input-campo label{
     font-size: 12px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: #000000;
 }
 
 .input-campo input, select{
@@ -211,6 +209,14 @@ nav a {
 /*---------------lista usuarios----------------*/
 #contenedor2{
     margin-top: 50px ;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    justify-self: center;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    
 }
 
 #contenedor2 h1{
