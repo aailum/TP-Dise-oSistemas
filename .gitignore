@@ -1,0 +1,11 @@
+# .gitignore
+
+# Ignorar archivo de variables de entorno
+.env
+
+# Ignorar carpetas y archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Ignorar carpeta instance
+instance/

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylePrincipal.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stylePrincipal.css">
     <title>Pagina principal</title>
 </head>
 <body>
@@ -13,14 +12,13 @@
         <div class="ingreso">
             <h1>Acceder como</h1>
             <form id="loginForm" action="" method="get">
-                <button type="button" onclick="redirectToForm('admin/ingresoAdmin.html')"><a>Administrador</a></button>
+                <button type="button" onclick="redirectToForm('/admin_home')"><a>Administrador</a></button>
                 <button type="button" onclick="redirectToForm('/coordinador_home')"><a>Coordinador</a></button>
                 <button type="button" onclick="redirectToForm('/bombero_home')"><a>Bombero</a></button>
             </form>
         </div>
     </div>
 
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <script>
         function redirectToForm(action) {
             window.location.href = action;
