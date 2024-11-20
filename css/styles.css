@@ -147,21 +147,38 @@ form .buttons{
     color: #fff;
     position: fixed;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+
 }
+
 .sidebar img { 
     width: 200px;  margin-bottom: 20px; /* Ajusta el valor width para cambiar el tamaño */
 }
-.sidebar a {
+.sidebar a, .sidebar button {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
     color: #fff;
     display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
 }
-.sidebar a:hover {
+.sidebar a:hover, .sidebar button:hover {
     background-color: #575757;
 }
+
+.top-menu {
+    flex-grow: 1;
+}
+
+.bottom-menu {
+    margin-top: auto;
+}
+
 .content {
     margin-left: 200px;
     padding: 20px;
@@ -178,6 +195,7 @@ header {
     top: 0;
     left: 200px;
     box-sizing: border-box;
+    border-top: 5px solid #333;
 }
 header img {
     height: 50px;
@@ -185,6 +203,7 @@ header img {
 }
 header h1 {
     font-size: 24px;
+    color:#333;
     margin: 0;
 }
 
