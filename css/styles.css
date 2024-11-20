@@ -130,6 +130,10 @@ form .buttons{
     margin-left: 14px;
 }
 
+button a{
+    color: #fff;
+    text-decoration: none;
+}
 #crearBtn:hover{
     background-color: #265df2;
 }
