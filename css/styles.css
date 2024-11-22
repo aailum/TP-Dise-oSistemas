@@ -6,7 +6,7 @@ body{
     display: flex;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     
 
 }
@@ -25,9 +25,9 @@ body{
     
 }
 
-h3{
+#titulo{
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #000000;
 }
@@ -53,11 +53,11 @@ h3::before{
 
 }
 
-.contenedor1 form .titulo{
+.contenedor1 form .tituloDatos{
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     margin: 6px 0;
     color: #000000;
 }
@@ -80,8 +80,8 @@ form .campos .input-campo{
 
 .input-campo label{
     font-size: 12px;
-    font-weight: 500;
-    color: #000000;
+    font-weight: bold;
+    color: #000;
 }
 
 .input-campo input, select{
@@ -160,7 +160,7 @@ button a{
 }
 
 .sidebar img { 
-    width: 200px;  margin-bottom: 20px; /* Ajusta el valor width para cambiar el tamaño */
+    width: 200px;  margin-bottom: 20px; 
 }
 .sidebar a, .sidebar button {
     padding: 10px 15px;
@@ -239,7 +239,7 @@ header h1 {
 table{
     border-collapse: collapse;
     font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     width: 100%;
 }
 
@@ -249,10 +249,7 @@ table th{
     background: #ee1f03;
     color:#fff;
 }
-/*
-table tr:nth-child(odd){
-    background: #FFF;
-}*/
+
 
 table td{
     padding: 10px;
@@ -311,16 +308,79 @@ h2 {
 
 @media (max-width: 750px){
     form .fields .input-field{
-        width: calc(100% / 2 - 15px);
+       width: calc(100% / 2 - 15px);
+       
         
     }
-}
 
+    .contenedor1, .container{
+        width: 80%;
+        margin: 50px 10px 5px 15px;
 
-/*------------Responsive--------------*/
+    }
 
-@media (max-width: 670px){
-    .sidebar{
-        display: none;
+    .contenedor2{
+        width: 80%;
     }
 }
+
+@media (max-width: 606px){
+    .sidebar {
+        width: 150px;
+    
+    }
+    
+    .sidebar img { 
+        width: 150px;
+    }
+    .content {
+        margin-left: 150px;
+    }
+    
+    header {
+        top: 0;
+        left: 150px;
+    }
+
+    .contenedor1, .container{
+        width: 50%;
+        margin: 50px 20px 5px 15px;
+
+    }
+
+    .contenedor2{
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    .sidebar {
+        width: 150px;
+    
+    }
+    
+    .sidebar img { 
+        width: 150px;
+    }
+    
+    
+    header {
+        top: 0;
+        left: 150px;
+    }
+    
+
+    .contenedor1, .container{
+        width: 50%;
+        position: inherit;
+        
+
+    }
+    .contenedor2{
+        width: 50%;
+    }
+}
+
+
+
+
