@@ -156,6 +156,7 @@ button a{
     padding-top: 5px;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 
 }
 
@@ -202,6 +203,7 @@ header {
     left: 200px;
     box-sizing: border-box;
     border-top: 5px solid #333;
+    z-index: 10;
 }
 header img {
     height: 50px;
@@ -306,7 +308,7 @@ h2 {
 }
 
 
-@media (max-width: 750px){
+@media all and (max-width: 750px){
     form .fields .input-field{
        width: calc(100% / 2 - 15px);
        
@@ -319,66 +321,89 @@ h2 {
 
     }
 
+    
+
+    .content{
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+
     .contenedor2{
         width: 80%;
     }
-}
-
-@media (max-width: 606px){
-    .sidebar {
-        width: 150px;
     
-    }
-    
-    .sidebar img { 
-        width: 150px;
-    }
-    .content {
-        margin-left: 150px;
-    }
-    
-    header {
-        top: 0;
-        left: 150px;
+    .tabla-perfil{
+        width: 100%;
     }
 
-    .contenedor1, .container{
-        width: 50%;
-        margin: 50px 20px 5px 15px;
-
-    }
-
-    .contenedor2{
-        width: 50%;
-    }
-}
-
-@media (max-width: 500px){
-    .sidebar {
-        width: 150px;
-    
-    }
-    
-    .sidebar img { 
-        width: 150px;
-    }
-    
-    
-    header {
-        top: 0;
-        left: 150px;
-    }
-    
-
-    .contenedor1, .container{
-        width: 50%;
-        position: inherit;
+    .tabla-label, .tabla-info, th, td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
         
 
     }
+
+    
+    
+    
+}
+
+@media all and (max-width: 606px){
+    .sidebar {
+        width: 150px;
+       
+    
+    }
+    
+    .sidebar img { 
+        width: 150px;
+        
+    }
+
+    header {
+        top: 0;
+        left: 150px;
+    }
+
+
+    .content{
+        width: 100%;
+        margin-left: 150px;
+        padding-left: 15px;
+        
+    }
+   
+
+    .contenedor1{
+        width: 75%;
+        margin: 50px 15px 5px 15px;
+
+    }
+
+    .container{
+        margin-left: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        background-color: #b40202;
+    }
+
     .contenedor2{
         width: 50%;
     }
+
+
+
+    .tabla-label, .tabla-info, th, td{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    
 }
 
 
